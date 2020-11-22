@@ -1,0 +1,237 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+p {
+	background-color: none;
+	font-size: 50%;
+	margin : 30px;
+}
+
+body {
+	background-color: #c70202 ;
+	background-size: 100%;
+	color: #ffd6d6;
+	font-size: 150%;
+	margin: 0px;
+	color: white;
+	
+	
+}
+header{
+
+	background: url(../sunset3.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	color: #a9fcf6; 
+}
+h1 {
+	text-align: center;
+	margin: 0px ;
+	padding-top: 15px;
+	
+}
+
+nav{
+	width: 100%;
+	background-color: black;
+	padding: 5px;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none ;
+}
+
+li{
+	display: inline-block;
+	width : 15%;
+	text-align: center;
+	font-size: 90%;
+}
+
+li a{
+	color: #a9fcf6;
+	text-decoration: none;
+}
+
+li a:hover{
+	color: lime;
+	transition: .4s;
+	cursor: pointer;
+}
+
+.show-button , .hide-button{
+	float: right;
+	display: none;
+
+}
+
+#chk{
+	position: absolute;
+	visibility: hidden;
+	z-index: -400;
+}
+
+.active{
+	background-color: gray;
+}
+
+section{
+	color: #ffd6d6;
+	padding-left: 15px;
+	padding-top: 10px;
+	border: solid;
+}
+
+section h2, section h3, section div{
+	padding-left: 25px;
+	padding-top: 8px;
+}
+
+section p{
+	font-size: 85%;
+}
+
+		
+section img{
+	width :40%;
+	height: 400px;
+	padding: 5px;
+	border-radius: 5%;
+}
+
+section a{
+	color: #c0f7a6;
+	text-decoration: none;
+}
+section a:hover{
+	color: #00004a;
+}
+
+
+footer{
+	background-color: black;
+	color: #a9fcf6;
+	text-align: center;
+	font-size: 80%;
+}
+
+footer a{
+	text-decoration: none;
+	color: #a9fcf6;
+}
+
+footer a:hover{
+	color: #4a81f0;
+}
+
+
+@media screen and (max-width: 1200px){
+	section img{
+	width :52%;
+	height: 400px;
+	padding: 5px;
+}
+}
+
+@media screen and (max-width: 1200px){
+	section img{
+	width :75%;
+	height: 400px;
+	padding: 5px;
+}
+
+section{
+	color: #ffd6d6 ;
+	padding-left: 5px;
+	padding-top: 10px;
+}
+}
+
+@media screen and (max-width: 800px){
+	section img{
+	width :90%;
+	height: 400px;
+	padding: 5px;
+}
+}
+@media screen and (max-width: 550px){
+	section img{
+	width :98%;
+	height: 300px;
+	padding: 5px;
+	margin: auto;
+}
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 880px)
+{
+
+.show-button, .hide-button{
+		display: block;
+		padding-right: 8px;
+		padding-top: 10px;
+	}
+
+.hide-button{
+		position: absolute;
+		right: 4px;
+		top: 2px;
+	}
+
+header{
+
+	background: url(../sunset2.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	color: #a9fcf6; 
+}
+
+header p{
+	display: none;
+}
+
+
+nav{
+	padding: 0px 0 40px 0;
+	background-color: black;
+}
+ .menu{
+	position: fixed;
+	top: 80px;
+	right: -300%;
+	background: black;
+	width: 80%;
+	height: 100vh;
+
+
+ }
+#chk:checked ~ .menu {
+	right: 0% ;
+	transition: .5s;
+}
+
+.menu li{
+ 	display: block;
+ 	padding: 40px 0px 0px 15px; ;
+ 	text-align: center;
+ }
+.active{
+	background-color: black;
+}
+
+footer{
+	font-size: 75%;
+}
+@media (max-width: 430px){
+	.menu{
+	top: 135px;
+}
